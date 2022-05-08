@@ -1,0 +1,52 @@
+.TH _PRINTF 3 "5  Nov 2021" "version 1.0"
+.SH NAME _printf
+This function prints formatted strings, characters and numbers, and string literals. According to a format indicated by the user. At the end, it returns the length og the characters printed.
+.SH SYNOPSIS
+This function takes nth arguments to print them through the standard output. The input arguments can be single characters, literal strings, integer or decimal numbers with their respective format. The permitted formats are: %s, %c, %i and %d. As first argument, the function receives a string that may contain one or more of the formats previosly mentioned if requiered.
+.PP
+%s: use it for strings.
+.PP
+%c: use it use it for decimal numbers (base 10)
+.PP
+%i: use it use it for integer numbers
+.PP
+.SH DESCRIPTION
+.PP
+The function works as it follows:
+.PP
+By declaring the function _printf, the user has to type as first parameter a string like this: "hello, %s\n". Then, as second parameter it must be ralated to the format specified by the letter typed after the percentage sign (%). This will apply for nth arguments you add to the function.\n
+.PP
+.SH EXAMPLES
+.PP
+_printf("this is a sentence without any format");
+.PP
+Output: this is a sentence without a format
+.PP
+_printf("Hello I'm Susinios and I'm %d years old", 30)
+.PP
+Output: Hello I'm Susinios and I'm 30 years old
+.PP
+_printf("I'm the last letter of the alphabet: %c", 'z')
+.PP
+Output: I'm the last letter of the alphabet: z
+.PP
+.SH SEE ALSO
+.PP
+putchar, puts and printf
+.PP
+.SH BUGS
+.PP
+List known bugs.
+.PP
+.SH AUTHOR
+.PP
+Susinios Legese Dereb Felasman
+.PP
+.SH COPYRIGHT
+.PP
+GNU lesser general public license v2.1
+.PP
+.SH RETURN VALUE
+.PP
+the return value is the length of string printer for the function or in ERROR case is -1.
+.PP
